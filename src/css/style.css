@@ -1,15 +1,108 @@
-@media screen and (width >=320px) {
-	#some-id {
-		color: red;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=IM+Fell+English&display=swap');
+
+body {
+	font-family: "IBM Plex Serif", serif;
+	padding: 20px;
+}
+
+.paragraph {
+	font-weight: bold;
+}
+
+.meetinghouse-image {
+	width: 50%;
+	height: auto;
+}
+
+.granary-image {
+	width: 50%;
+	height: auto;
+}
+
+.north-image {
+	width: 50%;
+	height: auto;
+}
+
+.common-image {
+	width: 50%;
+	height: auto;
+}
+
+.revere-image {
+	width: 50%;
+	height: auto;
+}
+
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 1em;
+	row-gap: 1em;
+}
+
+.paragraph {
+	font-weight: bold;
+}
+
+.first-line {
+	color: firebrick;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "IM Fell English", serif;
+	text-align: center;
+}
+
+h2 {
+	font-family: "IM Fell English", serif;
+	text-align: center;
+}
+
+.text-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	column-gap: 1em;
+	row-gap: 1em;
+}
+
+.visitor-tips {
+	text-align: left;
+	flex: 50%;
+}
+
+.trivia {
+	text-align: center;
+	flex: 50%;
+}
+
+@media only screen and (max-width: 320px) {
+	.list {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		row-gap: 1em;
+	}
+
+	.text-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 1em;
+		row-gap: 1em;
 	}
 }
 
-@media screen and (width >=500px) {
-	#some-id {
-		color: red;
+@media only screen and (max-width: 768px) {
+	.text-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 1em;
+		row-gap: 1em;
 	}
-}
-
-.page-title {
-	color: firebrick
 }
